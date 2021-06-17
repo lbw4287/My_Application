@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FoodDetail"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="294dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/binggrae"
+            android:text="이름"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="40dp"></TextView>
+
+        <ImageView
+            android:id="@+id/food_image"
+            android:layout_width="381dp"
+            android:layout_height="218dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/persimmon" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="477dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/gradation_o"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <LinearLayout
+            android:layout_width="377dp"
+            android:layout_height="435dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/binggrae"
+                android:text="급여여부: "
+                android:textColor="#000000"
+                android:textSize="30dp"></TextView>
+
+            <TextView
+                android:id="@+id/yn"
+                android:layout_width="180dp"
+                android:layout_height="54dp"
+                android:fontFamily="@font/binggrae"
+                android:text="O/X"
+                android:textColor="#000000"
+                android:textSize="30dp"></TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="366dp"
+            android:layout_height="456dp">
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="306dp"
+                android:layout_height="298dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/binggrae"
+                android:text="설명"
+                android:textColor="#000000"
+                android:textSize="15dp"></TextView>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>
